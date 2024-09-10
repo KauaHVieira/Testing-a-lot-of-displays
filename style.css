@@ -5,6 +5,11 @@
 }
 
 
+*{
+    padding: 0;
+    margin: 0;
+
+}
 .dp-menu ul{
 list-style-type: none;
 padding:0;
@@ -12,17 +17,19 @@ padding:0;
 }
 .dp-menu ul{
     background-color: var(--corFundo);
+    
 }
 
 .dp-menu ul li{
-display: inline-block;
-
+display: inline;
+position: relative;
 }
 
 .dp-menu ul li a{
 color: var(--cor-primaria);
 text-decoration: none;
 padding:10px;
+display:inline-block;
 
 }
 
@@ -34,6 +41,18 @@ padding:10px;
 /*sub-menu*/
 .dp-menu ul ul{
 display: none;
-position:relative;
-
+position: absolute;
 }
+
+.dp-menu ul li:hover ul{
+    display: block;
+    
+    }
+
+    .dp-menu ul ul{
+        width: 150px;
+        }
+
+        .dp-menu ul ul li a{
+            display: block;
+            }
