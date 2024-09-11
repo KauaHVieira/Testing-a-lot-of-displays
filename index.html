@@ -5,11 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MenuDropDown</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    
-<nav class="dp-menu"> 
+    <header>
+<nav> 
 
+<div class="logo"><a href="#">FITS</a></div>
+<div class="toggle_menu">
+    <i class='bx bx-grid-alt'></i>  
+</div>
+<ul class="nav_list">
+    <div class="close_menu">
+        <i class='bx bx-x'></i>
+    </div>
+    <li class="nav_item"><a href="#" class="nav_link">Home</a></li>
+    <li class="nav_item dropdown"><a href="#" class="nav_link dropdown_link">Catálogo<i class='bx bx-chevron-down dropdown_icon'></i></a>
+    
+        <div class="megamenu">
+        <ul class="content">
+    <li class="megamenu_item header_megamenu"></li>
+    <li class="megamenu_item">
+        <div class="menu_icon">
+        <i class="bx bx-palette"></i>
+        </div>
+        <div class="megamenu_link">
+            <a href="#">Creatina</a>
+            <p>suplementos fodas</p>
+
+
+                </div>
+              </li>
+           </ul>
+        </div>
+    </li>
+
+</ul>
+
+
+
+
+
+<!--
 <ul>
 <li><a href="#">Logo</a></li>
 <li><a href="#">Catálogo</a>
@@ -23,10 +60,12 @@
 </li>
 <li><a href="#">Carrinho</a></li>
 <li><a href="#">Login</a></li>
-
 </ul>
+-->
 
 
+
+</header>
 </nav>
 </body>
 </html>
