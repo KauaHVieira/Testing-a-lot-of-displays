@@ -73,9 +73,9 @@ padding: 1.4rem 0;
 
 }
 
+
 .nav_link{
  font-weight: 500;
-
 }
 
 .nav_link:hover{
@@ -143,13 +143,18 @@ color: #0F6;
 }
 
 .megamenu_link a {
-font-weight:500;
+font-weight: 500;
 color: #000;
 }
 
 .megamenu_link a:hover {
     font-weight:500;
     color: var(--cor-primaria);
+
+    }
+
+    .megamenu_a{
+     margin-left: 20%;
 
     }
 
@@ -215,7 +220,7 @@ transition: 0.3s;
 
 .toggle_menu,
 .close_menu {
-display: block;
+display: none;
 
 }
 
@@ -231,6 +236,12 @@ color: #0F6;
     width: 32px;
     height: 32px;
     text-align: center;
+}
+
+.toggle_menu,
+.close_menu {
+display: block;
+
 }
 
 .close_menu:hover{
