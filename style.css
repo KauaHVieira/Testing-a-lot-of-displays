@@ -1,9 +1,14 @@
-:root{
-    --corFundo: #ffff;
-    --cor-primaria: #0F6;
-    --cor-hover: #000;
-}
 
+:root{
+    --background-color: #fff;
+    --primary-color:  #0F6;
+    --secondary-color: #fff;
+    --tertiary-color: #000000;
+    --hover-color:  #000;
+    --primary-font:  Russo One; 
+  
+  
+  }
 
 *{
     padding: 0;
@@ -17,7 +22,7 @@ body{
     height: 100%;
     display: block;
     overflow-x: hidden;
-    background-color: var(--corFundo);
+    background-color: var(--background-color);
 
    }
 
@@ -34,7 +39,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    background-color:var(--cor-primaria);
+    background-color:var(--primary-color);
     z-index: 999;
 
 }
@@ -76,10 +81,11 @@ padding: 1.4rem 0;
 
 .nav_link{
  font-weight: 500;
+ color: var(--secondary-color)
 }
 
 .nav_link:hover{
-color: var(--corFundo);
+color: var(--tertiary-color);
 }
 
 .dropdown_link{
@@ -97,7 +103,7 @@ position: absolute;
 width: 100%;
 top: 4rem;
 left: 0;
-background-color: var(--corFundo);
+background-color: var(--background-color);
 display: flex;
 justify-content: center;
 border-radius: 0 0 20px 20px;
@@ -122,7 +128,7 @@ margin-bottom: 1rem;
 
 .header_megamenu{
 font-weight: 600;
-color: #000;
+color: var(--tertiary-color);
 margin-bottom: 1rem;
 }
 
@@ -131,25 +137,25 @@ width:32px;
 height:32px;
 border-radius: 50%;
 text-align: center;
-background-color: var(--cor-Fundo);
+background-color: var(--background-color);
 margin-right: 0.5rem;
 }
 
 .menu_icon i {
 line-height:  32px;
 font-size:  32px;
-color: #0F6;
+color: var(--primary-color);
 
 }
 
 .megamenu_link a {
 font-weight: 500;
-color: #000;
+color: var(--tertiary-color);
 }
 
 .megamenu_link a:hover {
     font-weight:500;
-    color: var(--cor-primaria);
+    color: var(--primary-color);
 
     }
 
@@ -166,7 +172,7 @@ color: #a8a1b5;
  }   
 
  .dropdown:hover .megamenu{
-color:#0F6;
+color: var(--primary-color);
 visibility: visible;
 transition: all 0.3s ease;
 opacity: 1;
@@ -210,7 +216,7 @@ width: 100%;
 left: -100%;
 max-width: 350px;
 top: 0;
-background-color: #ffff;
+background-color: var(--background-color);
 flex-direction: column;
 overflow-x: hidden;
 display: block;
@@ -231,7 +237,7 @@ color: #0F6;
 
 .close_menu{
     margin: 1rem 1rem 1rem auto;
-    background-color: #0F6;
+    background-color: var(--primary-color);
     border-radius:  50%;
     width: 32px;
     height: 32px;
@@ -245,13 +251,13 @@ display: block;
 }
 
 .close_menu:hover{
-    color: #0F6
+    color: var(--primary-color);
   
 }
 
 .close_menu i{
 line-height: 32px;
-color: #fff;
+color: var(--background-color);
 font-size: 22px;
 
 }
