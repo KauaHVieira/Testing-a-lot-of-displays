@@ -1,0 +1,29 @@
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
+h1{
+font-size: 40px;
+font-family: Tourney;
+text-shadow: 0.1em 0.1em #0f6;
+margin-left: 45px;
+}
+
+.h2cadastro{
+font-size: 26px;
+text-shadow: 2px 2px LightSlateGray;
+margin-left: 140px;
+
+}
