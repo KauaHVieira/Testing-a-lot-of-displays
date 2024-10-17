@@ -10,11 +10,16 @@ body{
     
 }
 
-.container{
-    background-color: blue;
-    width: 10px;
-    height: 100px;
+.fitpagamento{
+
+
     
+}
+.cont1{
+    background-color: blue;
+    width: 150px;
+    height: 100px;
+    margin-left: 10%;
 }
 
 .cont{
