@@ -1,0 +1,171 @@
+.cart-sidebar, .shadow-cart {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.shadow-cart {
+    width: 100%;
+    background-color: #171717;
+    left: 0;
+    z-index: 11;
+    visibility: hidden;
+}
+
+.cart-sidebar.active ~ .shadow-cart {
+    opacity: .9;
+    visibility: visible;
+}
+
+.cart-sidebar {
+    right: 0;
+    background: #ffffff;
+    color: #0d0d0d;
+    z-index: 12;
+    width: 430px;
+    max-width: 100%;
+    padding: 0 20px;
+    transform: translateX(100%);
+    display: flex;
+    flex-direction: column;
+}    
+
+.cart-sidebar.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.cart-sidebar .header-cart {
+    background: #0c0c0c;
+    margin: 0 -20px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.cart-sidebar .header-cart .box-prev {
+    padding: 10px;
+    margin-right: 14px;
+    cursor: pointer;
+    background-color: #2d2d2d;
+}
+
+.cart-sidebar .header-cart .box-prev .icon {
+    width: 16px;
+    height: 16px;
+    fill: #fff;
+    display: block;
+}
+
+.cart-sidebar .content-cart {
+    overflow: auto;
+    padding-top: 20px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart-sidebar .item {
+    margin-bottom: 20px;
+}
+
+.cart-sidebar .box-cart {
+    display: flex;
+    align-items: center;
+}
+
+.cart-sidebar .box-cart .box-image {
+    width: 84px;
+    height: 84px;
+    border: 1px solid #f6f6f8;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-sidebar .box-cart .box-image img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+
+.cart-sidebar .box-cart .info-product {
+    width: calc(100% - 80px);
+    margin-left: 10px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.cart-sidebar .box-cart .line-top {
+    display: flex;
+    justify-content: space-between;
+}  
+
+.cart-sidebar .box-cart .info-product a {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.cart-sidebar .box-cart .info-product .remove {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+}
+
+.cart-sidebar .box-cart .info-product .price {
+    font-weight: 700;
+}
+
+.cart-sidebar .box-cart .info-product .qnt {
+    font-size: .75rem;
+}
+
+.cart-sidebar .footer-cart {
+    height: 200px;
+    margin-top: 15px;
+}
+
+.cart-sidebar .content-cart.empty + .footer-cart {
+    display: none;
+}
+
+.cart-sidebar .footer-cart .text-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: right;
+}
+
+.cart-sidebar .text-info .value {
+    font-weight: 700;
+    display: block;
+}
+
+.cart-sidebar .footer-cart .line {
+    margin: 20px 0;
+}
+
+.cart-sidebar .footer-cart .link-cart {
+    color: #fff;
+    text-align: center;
+    background: #646464;
+    width: 100%;
+    display: block;
+    border-radius: 30px;
+    line-height: 55px;
+}
+
+.cart-sidebar .footer-cart .box-prev {
+    text-align: center;
+    margin-top: 15px;
+    cursor: pointer;
+}
