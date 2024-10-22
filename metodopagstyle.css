@@ -30,18 +30,6 @@ body{
 
     
 }
-.cont1{
-    background-color: #fff;
-    width: 100px;
-    height: 40px;
-    margin-left: 5%;
-    position: absolute;
-    margin-top: 80px;
-    border: solid black 1px;
-    border-radius: 30px;
-    text-align: center;
-    box-shadow: 4px 4px 2px var(--primary-color);
-}
 
 .cont{
 background-color: #fff;
@@ -55,8 +43,75 @@ margin-left: 30%;
 
 }
 
+.contpix{
+    background-color: #fff;
+    width: 100px;
+    height: 40px;
+    margin-left: 25%;
+    position: absolute;
+    margin-top: 100px;
+    border: solid black 1px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 5px 5px 10px 5px var(--primary-color);
+}
+
+.contdebito{
+    background-color: #fff;
+    width: 100px;
+    height: 40px;
+    margin-left: 15%;
+    position: absolute;
+    margin-top: 100px;
+    border: solid black 1px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 5px 5px 10px 5px var(--primary-color);
+}
+
+.contcredito{
+    background-color: #fff;
+    width: 100px;
+    height: 40px;
+    margin-left: 5%;
+    position: absolute;
+    margin-top: 100px;
+    border: solid black 1px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 5px 5px 10px 5px var(--primary-color);
+}
+
+
+.botaocomprar{
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+    width: 100px;
+    height: 40px;
+    margin-left: 75%;
+    position: absolute;
+    margin-top: 400px;
+
+}
+
+ .botao{
+    width: 100px;
+    height: 50px;
+    margin-left: 70%;
+    margin-top: 400px;
+    border: solid 1px var(--primary-color);
+    border-radius: 20px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+.botao:hover{
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
 .titulopagamento{
-font-size: 18px;
+font-size: 20px;
  position: absolute;
  margin-left: 5%;
  margin-top: 30px;
