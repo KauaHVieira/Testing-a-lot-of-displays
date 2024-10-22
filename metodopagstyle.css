@@ -1,3 +1,15 @@
+:root{
+    --background-color: #fff;
+    --primary-color:  #0F6;
+    --secondary-color: #fff;
+    --tertiary-color: #000000;
+    --hover-color:  #000;
+    --primary-font:  Russo One; 
+  
+  
+  }
+
+
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +19,9 @@
 body{
     overflow-x: hidden;
     outline: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     
 }
 
@@ -16,10 +31,16 @@ body{
     
 }
 .cont1{
-    background-color: blue;
-    width: 150px;
-    height: 100px;
-    margin-left: 10%;
+    background-color: #fff;
+    width: 100px;
+    height: 40px;
+    margin-left: 5%;
+    position: absolute;
+    margin-top: 80px;
+    border: solid black 1px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 4px 4px 2px var(--primary-color);
 }
 
 .cont{
@@ -30,6 +51,17 @@ border-width: 0.3px;
 border-right-style: solid;
 border-left-style: solid;
 margin-left: 30%;
+
+
+}
+
+.titulopagamento{
+font-size: 18px;
+ position: absolute;
+ margin-left: 5%;
+ margin-top: 30px;
+ text-shadow: 0.1em 0.1em gray;
+
 }
 
 h1{
